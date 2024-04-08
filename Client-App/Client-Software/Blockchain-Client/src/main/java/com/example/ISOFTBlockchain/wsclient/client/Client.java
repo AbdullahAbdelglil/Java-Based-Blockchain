@@ -111,10 +111,9 @@ public class Client {
 
     @OnError
     public void onError(Throwable throwable) {
-        System.out.println("Oops! there is something wrong :(");
+        System.out.println("there is something wrong :(");
         System.out.println("Error: "+ Arrays.toString(throwable.getStackTrace()));
         printDashedLine();
-
     }
 
     @OnClose

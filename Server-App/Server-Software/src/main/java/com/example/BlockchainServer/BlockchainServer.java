@@ -123,9 +123,12 @@ public class BlockchainServer {
     @OnError
     public void onError(Session session, Throwable throwable) throws EncodeException, IOException {
         String msg = users.get(session.getId())+" Disconnected";
-
         print(msg);
-        broadcast(msg, session);
+
+        Message message  = new Message();
+        message.setContent(msg);
+        broadcast(message, session);
+
         printDashedLine();
     }
 
