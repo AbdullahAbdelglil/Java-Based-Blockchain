@@ -59,6 +59,10 @@ public class Client {
         if (msgFromServer != null) {
             if (msgFromServer.getContent() != null) {
                 print("Server: " + msgFromServer.getContent());
+                if(msgFromServer.getContent().contains("Disconnected")) {
+                    print("stop");
+                    printDashedLine();
+                }
                 if(msgFromServer.getContent().equals("❌ Invalid transaction")) {
                     print("Cause: sufficient funds, or account not found");
                     print("stop");
