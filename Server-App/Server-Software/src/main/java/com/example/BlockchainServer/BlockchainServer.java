@@ -124,6 +124,7 @@ public class BlockchainServer {
     public void onError(Session session, Throwable throwable) throws EncodeException, IOException {
         String msg = "There is an error in "+users.get(session.getId())+"'s session";
         print(msg);
+        print("stop");
         printDashedLine();
     }
 
@@ -134,8 +135,11 @@ public class BlockchainServer {
         String msg = users.get(session.getId())+" Disconnected";
         Message message  = new Message();
         message.setContent(msg);
-        print(msg);
         broadcast(message, session);
+       
+        print(msg);
+        print("stop");
+        printDashedLine();
     }
 
     private void handleBroadcastTransactionRequest(Session session, Message msgFromClient) throws EncodeException, IOException {
