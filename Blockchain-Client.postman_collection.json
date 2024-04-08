@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "d77f8b2b-dc52-4b05-a133-2e406e36baae",
+		"name": "Blockchain-Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31988765",
+		"_collection_link": "https://gold-meadow-878586.postman.co/workspace/My-Workspace~f7f6c038-0756-4825-8cce-a75b049a2b2f/collection/31988765-d77f8b2b-dc52-4b05-a133-2e406e36baae?action=share&source=collection_link&creator=31988765"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ownerName\":\"Abdullah\",\r\n    \"balance\":1200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/clients/account/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clients",
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/clients/account/withdraw/100",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clients",
+						"account",
+						"withdraw",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/clients/account/deposit/100",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clients",
+						"account",
+						"deposit",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/clients/account/transfer/100/to/AH006294890001",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clients",
+						"account",
+						"transfer",
+						"100",
+						"to",
+						"AH006294890001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blockchain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/clients/account/blockchain",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clients",
+						"account",
+						"blockchain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ledger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/clients/account/ledger",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"clients",
+						"account",
+						"ledger"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
