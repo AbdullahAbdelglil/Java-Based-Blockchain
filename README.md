@@ -8,7 +8,7 @@ This project is a full Java-based blockchain implementation that demonstrates va
 [![Hazelcast](https://img.shields.io/badge/Hazelcast-Caching-blue)](https://hazelcast.com/)
 
 
-## 1. Blockchain-Server
+## 1. Server-App
 
 The Blockchain-Server project is responsible for managing communication with clients, maintaining the blockchain, and handling consensus mechanisms.
 
@@ -18,7 +18,7 @@ The Blockchain-Server project is responsible for managing communication with cli
 - Utilizes a combination of Proof of Stake (POS) and Proof of Work (POW) to select the block maker and resolve conflicting transactions.
 - Implements a distributed ledger ensuring the immutability of records.
   
-## 2. Blockchain-Client
+## 2. Client-App
 
 The Blockchain-Client project serves as the interface for users to interact with the blockchain network.
 
