@@ -26,7 +26,8 @@ The Blockchain-Client project serves as the interface for users to interact with
 - Java 17
 - Spring Framework 3.2.4
 - MongoDB
-
+- Hazelcast
+  
 ## Getting Started:
 
 ### Prerequisites:
