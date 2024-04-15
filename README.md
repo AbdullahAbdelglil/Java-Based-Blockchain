@@ -2,6 +2,12 @@
 
 This project is a full Java-based blockchain implementation that demonstrates various basic blockchain concepts including distributed ledger, immutable records, consensus mechanisms, and more. It consists of two main projects:
 
+[![Java](https://img.shields.io/badge/Java-17-orange)](https://www.java.com/)
+[![Spring](https://img.shields.io/badge/Spring-3.2.4-brightgreen)](https://spring.io/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)](https://www.mongodb.com/)
+[![Hazelcast](https://img.shields.io/badge/Hazelcast-Caching-blue)](https://hazelcast.com/)
+
+
 ## 1. Blockchain-Server
 
 The Blockchain-Server project is responsible for managing communication with clients, maintaining the blockchain, and handling consensus mechanisms.
