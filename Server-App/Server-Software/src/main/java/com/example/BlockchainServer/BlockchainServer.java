@@ -2,10 +2,9 @@ package com.example.BlockchainServer;
 
 import com.example.BlockchainServer.account.Account;
 import com.example.BlockchainServer.account.AccountService;
-import com.example.BlockchainServer.account.AccountServiceImpl;
 import com.example.BlockchainServer.block.Block;
 import com.example.BlockchainServer.block.BlockService;
-import com.example.BlockchainServer.block.BlockServiceImpl;
+
 import com.example.BlockchainServer.message.MessageDecoder;
 import com.example.BlockchainServer.message.MessageEncoder;
 
@@ -55,7 +54,6 @@ public class BlockchainServer {
     private static BlockService blockService;
     private static AccountService accountService;
 
-
     public BlockchainServer() {
     }
 
@@ -63,10 +61,9 @@ public class BlockchainServer {
     public BlockchainServer(BlockService blockService, AccountService accountService) {
         BlockchainServer.blockService = blockService;
         BlockchainServer.accountService = accountService;
-
     }
 
-    public static void init() {
+    public static void start() {
         Block lastBlock = blockService.getLastBlock();
         if (lastBlock != null) {
             IBlockchain.add(lastBlock);
@@ -84,22 +81,43 @@ public class BlockchainServer {
             Session session,
             @PathParam("username") String userName) throws IOException, EncodeException {
 
-        printDashedLine();
-        print(userName + " Connected!");
+        if(onlineSessions.get(userName)!=null) {
+            Message message = new Message();
+            message.setContent("You're already signed in from this device !\ntry to close the");
+
+        }
+
 
         this.session = session;
         chatEndpoints.add(this);
         onlineSessions.put(userName, session);
         users.put(session.getId(), userName);
 
-        Message msgToBroadcast = new Message();
-        msgToBroadcast.setContent(userName + " Active now!");
-        broadcast(msgToBroadcast, session);
+        sendInitialData(userName);
 
-        Message msgToSend = new Message();
-        msgToSend.setType(MessageType.SET_BLOCKCHAIN);
-        msgToSend.setBlockchain(IBlockchain);
-        sendObject(userName, msgToSend);
+        printDashedLine();
+        print(userName + " Connected!");
+
+        notifyOtherUsers(userName);
+    }
+
+    public void sendInitialData(String username) throws IOException, EncodeException {
+        Account account = accountService.getAccountByClientId(username);
+
+        Message message = new Message();
+
+        message.setType(MessageType.SET_INITIAL_DATA);
+        message.setBlockchain(IBlockchain);
+        message.setAccount(account);
+
+        sendObject(username, message);
+        notifyOtherUsers(username);
+    }
+
+    public void notifyOtherUsers(String username) throws IOException, EncodeException {
+        Message msgToBroadcast = new Message();
+        msgToBroadcast.setContent(username + " Active now!");
+        broadcast(msgToBroadcast, session);
     }
 
     @OnMessage
@@ -132,11 +150,12 @@ public class BlockchainServer {
     public void onClose(Session session) throws IOException, EncodeException {
         chatEndpoints.remove(this);
         onlineSessions.remove(users.get(session.getId()));
+
         String msg = users.get(session.getId())+" Disconnected";
         Message message  = new Message();
         message.setContent(msg);
         broadcast(message, session);
-       
+
         print(msg);
         print("stop");
         printDashedLine();

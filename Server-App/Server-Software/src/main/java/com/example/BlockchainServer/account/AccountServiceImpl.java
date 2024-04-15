@@ -30,6 +30,11 @@ public class AccountServiceImpl implements AccountService {
         return accountRepository.getAccountByAccountNumber(accountNumber);
     }
 
+    @Override
+    public Account getAccountByClientId(String clientId) {
+        return accountRepository.getAccountByClientID(clientId);
+    }
+
     public List<Account> getAllAccounts() {
         return accountRepository.findAll();
     }

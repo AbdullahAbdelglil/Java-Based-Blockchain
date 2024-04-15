@@ -8,7 +8,7 @@ public class BlockchainServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BlockchainServerApplication.class, args);
-		BlockchainServer.init();
+		BlockchainServer.start();
 	}
 
 }

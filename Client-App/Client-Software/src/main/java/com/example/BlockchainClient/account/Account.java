@@ -1,19 +1,12 @@
-package com.example.BlockchainServer.account;
-
-
-import com.fasterxml.jackson.annotation.JsonInclude;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+package com.example.BlockchainClient.account;
 
 import java.io.Serializable;
+import java.util.Random;
 
-@Document(collection ="accounts")
-@JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class Account implements Comparable<Account>  ,Serializable {
 
     private static final long serialVersionUID = 129348938L;
 
-    @Id
     private String accountNumber;
     private String userName;
     private String clientID;
@@ -25,7 +18,7 @@ public class Account implements Comparable<Account>  ,Serializable {
     public Account(String userName, Double balance) {
         this.userName = userName;
         this.balance = balance;
-        this.accountNumber = AccountServiceImpl.generateAccountNumber(userName);
+        this.accountNumber = generateAccountNumber(userName);
         this.creationDate = System.currentTimeMillis();
     }
 
@@ -47,10 +40,7 @@ public class Account implements Comparable<Account>  ,Serializable {
     }
 
     public void setAccountNumber() {
-        this.accountNumber = AccountServiceImpl.generateAccountNumber(this.userName);
-    }
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+        this.accountNumber =generateAccountNumber(this.userName);
     }
 
     public String getUserName() {
@@ -98,5 +88,19 @@ public class Account implements Comparable<Account>  ,Serializable {
     @Override
     public int compareTo(Account account) {
         return this.creationDate.compareTo(account.creationDate);
+    }
+    public static String generateAccountNumber(String owner){
+        StringBuilder accountNumber = new StringBuilder();
+
+        accountNumber.append(owner.substring(0, 2).toUpperCase());
+        accountNumber.append("00");
+
+        Random random = new Random();
+        int randomNumber = random.nextInt(900000) + 100000;
+
+        accountNumber.append(randomNumber);
+        accountNumber.append("0001");
+
+        return accountNumber.toString();
     }
 }

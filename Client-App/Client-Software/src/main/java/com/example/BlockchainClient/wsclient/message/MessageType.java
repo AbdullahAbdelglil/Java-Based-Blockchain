@@ -1,4 +1,4 @@
-package com.example.BlockchainServer.message;
+package com.example.BlockchainClient.wsclient.message;
 
 public enum MessageType {
     SET_INITIAL_DATA,

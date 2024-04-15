@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f94d8fd6-fac0-48d7-803c-c25686a59aae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Blockchain-Client.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Blockchain-Client.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Client - Copy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java-Blockchain-Implementation-old version.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/IsoftBlockchainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/account/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/block/Block.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/constants/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/transaction/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/client/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/client/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/client/ClientServicesImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/message/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/message/MessageDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/message/MessageEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/java/com/example/ISOFTBlockchain/wsclient/message/MessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/src/test/java/com/example/ISOFTBlockchain/IsoftBlockchainApplicationTestsServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/IsoftBlockchainApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/account/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/block/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/constants/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/transaction/Transaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/client/Client$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/client/Client$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/client/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/client/ClientController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/client/ClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/client/ClientServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/message/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/message/MessageDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/message/MessageEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/classes/com/example/ISOFTBlockchain/wsclient/message/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain-Client/target/test-classes/com/example/ISOFTBlockchain/IsoftBlockchainApplicationTestsServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/BlockchainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/BlockchainServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/BlockchainServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/BlockchainServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/account/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/message/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/java/com/example/BlockchainServer/message/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Server-App/Server-Software/src/test/java/com/example/BlockchainServer/BlockchainServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Server-App/Server-Software/src/test/java/com/example/BlockchainServer/BlockchainServerApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2eonGYZeK75nkBWNWB9OBeQnksF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.BlockchainClientApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.BlockchainClientApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Blockchain-Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Blockchain-Client" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlockchainClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BlockchainClient" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.BlockchainClient.BlockchainClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsoftBlockchainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ISOFT-Blockchain" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ISOFTBlockchain.IsoftBlockchainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f94d8fd6-fac0-48d7-803c-c25686a59aae" name="Changes" comment="" />
+      <created>1712579703416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712579703416</updated>
+      <workItem from="1712579704549" duration="16000" />
+      <workItem from="1713180141879" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

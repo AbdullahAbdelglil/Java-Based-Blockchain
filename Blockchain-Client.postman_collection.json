@@ -8,48 +8,18 @@
 	},
 	"item": [
 		{
-			"name": "Register",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"ownerName\":\"Abdullah\",\r\n    \"balance\":1200\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8081/clients/account/register",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"clients",
-						"account",
-						"register"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Withdraw",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/clients/account/withdraw/100",
+					"raw": "localhost:8081/client/withdraw/100",
 					"host": [
 						"localhost"
 					],
 					"port": "8081",
 					"path": [
-						"clients",
-						"account",
+						"client",
 						"withdraw",
 						"100"
 					]
@@ -63,16 +33,15 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/clients/account/deposit/100",
+					"raw": "localhost:8082/client/deposit/200",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
-						"clients",
-						"account",
+						"client",
 						"deposit",
-						"100"
+						"200"
 					]
 				}
 			},
@@ -84,14 +53,13 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/clients/account/transfer/100/to/AH006294890001",
+					"raw": "localhost:8082/client/transfer/100/to/AH006294890001",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
-						"clients",
-						"account",
+						"client",
 						"transfer",
 						"100",
 						"to",
@@ -107,14 +75,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/clients/account/blockchain",
+					"raw": "localhost:8082/client/blockchain",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
-						"clients",
-						"account",
+						"client",
 						"blockchain"
 					]
 				}
@@ -127,15 +94,33 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8081/clients/account/ledger",
+					"raw": "localhost:8082/client/ledger",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
-						"clients",
-						"account",
+						"client",
 						"ledger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/client/account-info",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"client",
+						"account-info"
 					]
 				}
 			},
