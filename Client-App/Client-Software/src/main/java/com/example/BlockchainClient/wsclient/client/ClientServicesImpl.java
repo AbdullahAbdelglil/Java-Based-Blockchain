@@ -13,6 +13,12 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import java.util.*;
 
+
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+
 @Service
 public class ClientServicesImpl implements ClientService {
     public static Client client;
@@ -24,7 +30,28 @@ public class ClientServicesImpl implements ClientService {
 
     public ClientServicesImpl(Environment environment) {
         ClientServicesImpl.environment = environment;
-        CLIENT_ID = environment.getProperty("username");
+        CLIENT_ID = environment.getProperty("username")+getMacAddress();
+    }
+
+    private String getMacAddress() {
+        try {
+            InetAddress inetAddress = InetAddress.getLocalHost();
+            String IPAddress = inetAddress.getHostAddress();
+
+            NetworkInterface networkInterface = NetworkInterface.getByInetAddress(inetAddress);
+
+            byte[] macBytes = networkInterface.getHardwareAddress();
+            StringBuilder MACAddress = new StringBuilder();
+            for (int i = 0; i < macBytes.length; i++) {
+                MACAddress.append(String.format(("%02X%s"), macBytes[i], (i < macBytes.length - 1) ? "-" : ""));
+            }
+
+            return ((MACAddress != null) ? ("-"+MACAddress) : "");
+
+        } catch (UnknownHostException | SocketException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     //----------------------------------------------------Init----------------------------------------------------------
