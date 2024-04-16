@@ -53,12 +53,14 @@ The Blockchain-Client project serves as the interface for users to interact with
   `cd Java-Based-Blockchain`
 
 3. Compile and run the Blockchain-Server project:
-  `cd Blockchain-Server` , 
-  `mvn spring-boot:run`
+  1. `cd Blockchain-Server/Server-App/Server-Software`
+     
+  2. `mvnw spring-boot:run`
 
 4. Compile and run the Blockchain-Client project:
-  `cd Blockchain-Client` , 
-  `mvn spring-boot:run`
+  1. `cd Blockchain-Client/Client-App/Client-Software`
+  
+  2. `mvnw spring-boot:run`
 
 5. Access the client application via a web browser or REST client.
 
