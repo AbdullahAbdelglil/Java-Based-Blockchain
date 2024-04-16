@@ -15,6 +15,7 @@ The Blockchain-Server project is responsible for managing communication with cli
 ### Features:
 - Listens to incoming messages from clients and broadcasts them using web sockets.
 - Stores all client data and blockchain records in MongoDB.
+- Stores all blockchain records in Hazelcast for caching and detect the DB changes or hackes.
 - Utilizes a combination of Proof of Stake (POS) and Proof of Work (POW) to select the block maker and resolve conflicting transactions.
 - Implements a distributed ledger ensuring the immutability of records.
   
