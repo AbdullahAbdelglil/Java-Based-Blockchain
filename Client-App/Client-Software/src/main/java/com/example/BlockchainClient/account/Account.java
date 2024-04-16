@@ -1,6 +1,8 @@
 package com.example.BlockchainClient.account;
 
 import java.io.Serializable;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.Random;
 
 public class Account implements Comparable<Account>  ,Serializable {
@@ -10,6 +12,7 @@ public class Account implements Comparable<Account>  ,Serializable {
     private String accountNumber;
     private String userName;
     private String clientID;
+    private String clientIP;
     private Double balance;
     private Long creationDate;
     public Account() {
@@ -20,6 +23,11 @@ public class Account implements Comparable<Account>  ,Serializable {
         this.balance = balance;
         this.accountNumber = generateAccountNumber(userName);
         this.creationDate = System.currentTimeMillis();
+        try {
+            this.clientIP = InetAddress.getLocalHost().getHostAddress();
+        }catch (UnknownHostException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void withdraw(Double amount) {
@@ -75,11 +83,17 @@ public class Account implements Comparable<Account>  ,Serializable {
         this.clientID = clientID;
     }
 
+    public String getClientIP() {
+        return clientIP;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
                 "accountNumber='" + accountNumber + '\'' +
-                ", ownerName='" + userName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", clientID='" + clientID + '\'' +
+                ", clientIP='" + clientIP + '\'' +
                 ", balance=" + balance +
                 ", creationDate=" + creationDate +
                 '}';

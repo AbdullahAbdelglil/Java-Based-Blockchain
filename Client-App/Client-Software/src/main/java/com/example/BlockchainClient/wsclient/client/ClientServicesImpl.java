@@ -35,8 +35,6 @@ public class ClientServicesImpl implements ClientService {
     private String getMacAddress() {
         try {
             InetAddress inetAddress = InetAddress.getLocalHost();
-            String IPAddress = inetAddress.getHostAddress();
-
             NetworkInterface networkInterface = NetworkInterface.getByInetAddress(inetAddress);
 
             byte[] macBytes = networkInterface.getHardwareAddress();

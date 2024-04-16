@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
+import java.net.InetAddress;
 
 @Document(collection ="accounts")
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
@@ -17,38 +18,10 @@ public class Account implements Comparable<Account>  ,Serializable {
     private String accountNumber;
     private String userName;
     private String clientID;
+    private String clientIP;
     private Double balance;
     private Long creationDate;
-    public Account() {
-    }
 
-    public Account(String userName, Double balance) {
-        this.userName = userName;
-        this.balance = balance;
-        this.accountNumber = AccountServiceImpl.generateAccountNumber(userName);
-        this.creationDate = System.currentTimeMillis();
-    }
-
-    public void withdraw(Double amount) {
-        this.balance -= amount;
-    }
-
-    public void deposit(Double amount) {
-        this.balance += amount;
-    }
-
-    public void transfer(Double amount, Account receiver) {
-        this.balance -= amount;
-        receiver.balance += amount;
-    }
-
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber() {
-        this.accountNumber = AccountServiceImpl.generateAccountNumber(this.userName);
-    }
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
@@ -59,6 +32,22 @@ public class Account implements Comparable<Account>  ,Serializable {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getClientID() {
+        return clientID;
+    }
+
+    public void setClientID(String clientID) {
+        this.clientID = clientID;
+    }
+
+    public String getClientIP() {
+        return clientIP;
+    }
+
+    public void setClientIP(String clientIP) {
+        this.clientIP = clientIP;
     }
 
     public Double getBalance() {
@@ -77,19 +66,17 @@ public class Account implements Comparable<Account>  ,Serializable {
         this.creationDate = creationDate;
     }
 
-    public String getClientID() {
-        return clientID;
-    }
-
-    public void setClientID(String clientID) {
-        this.clientID = clientID;
+    public String getAccountNumber() {
+        return accountNumber;
     }
 
     @Override
     public String toString() {
         return "Account{" +
                 "accountNumber='" + accountNumber + '\'' +
-                ", ownerName='" + userName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", clientID='" + clientID + '\'' +
+                ", clientIP='" + clientIP + '\'' +
                 ", balance=" + balance +
                 ", creationDate=" + creationDate +
                 '}';
