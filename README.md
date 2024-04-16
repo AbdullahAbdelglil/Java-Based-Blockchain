@@ -5,7 +5,7 @@ This project is a full Java-based blockchain implementation that demonstrates va
 [![Java](https://img.shields.io/badge/Java-17-orange)](https://www.java.com/)
 [![Spring](https://img.shields.io/badge/Spring-3.2.4-brightgreen)](https://spring.io/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Database-darkgreen)](https://www.mongodb.com/)
-[![Hazelcast](https://img.shields.io/badge/Hazelcast-5.3.3-blue)](https://hazelcast.com/)
+[![Hazelcast](https://img.shields.io/badge/Hazelcast-5.3.6-blue)](https://hazelcast.com/)
 
 
 ## 1. Server-App
@@ -32,14 +32,18 @@ The Blockchain-Client project serves as the interface for users to interact with
 - Java 17
 - Spring Framework 3.2.4
 - MongoDB
-- Hazelcast 5.3.3
+- Hazelcast 5.3.6
   
 ## Getting Started:
 
 ### Prerequisites:
-- Java Development Kit (JDK) 17 or higher
-- MongoDB installed and running locally or accessible remotely
-
+  (*) Means its must..
+  
+- * Java Development Kit (JDK) 17 or higher 
+- * MongoDB installed and running locally or accessible remotely
+- * Hazelcast 5.3.6
+- Hazelcast Management Center 5.3.3 (Optional) for tracking your memory usage
+  
 ### Installation:
 
 1. Clone the repository:
