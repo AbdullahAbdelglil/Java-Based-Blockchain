@@ -37,8 +37,7 @@ The Blockchain-Client project serves as the interface for users to interact with
   
 ## Getting Started:
 
-### Prerequisites:
-  (*) Means its must..
+### Prerequisites: (*) means it's must.. 
   
 -  Java Development Kit (JDK) 17 or higher *
 -  MongoDB installed and running locally or accessible remotely *
