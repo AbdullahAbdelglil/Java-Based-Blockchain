@@ -22,14 +22,13 @@ import java.net.UnknownHostException;
 @Service
 public class ClientServicesImpl implements ClientService {
     public static Client client;
-    private static Environment environment;
     private static Scanner in = new Scanner(System.in);
     private static String CLIENT_ID ;
 
     //-------------------------------------------------Constructor------------------------------------------------------
 
     public ClientServicesImpl(Environment environment) {
-        ClientServicesImpl.environment = environment;
+        Client.environment = environment;
         CLIENT_ID = environment.getProperty("username")+getMacAddress();
     }
 

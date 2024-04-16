@@ -13,6 +13,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.websocket.*;
 import org.json.JSONObject;
+import org.springframework.core.env.Environment;
 
 import java.io.IOException;
 import java.net.URI;
@@ -30,14 +31,17 @@ public class Client {
     private List<Block> blockchain;
     private final String userName;
     private static final ObjectMapper objectMapper = new ObjectMapper();
-
     private static Scanner in = new Scanner(System.in);
+    public static Environment environment;
+
     public Client(String username) {
         this.userName = username;
         try {
-            String serverURI = Constants.SERVER_URI+username;
+            String serverURI = environment.getProperty("SERVER_URI");
+            String connectionURI = serverURI + userName;
+
             WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-            container.connectToServer(this, new URI(serverURI));
+            container.connectToServer(this, new URI(connectionURI));
         } catch (DeploymentException | IOException | RuntimeException e) {
             e.printStackTrace();
         } catch (URISyntaxException e) {

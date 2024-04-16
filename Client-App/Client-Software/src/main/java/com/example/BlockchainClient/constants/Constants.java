@@ -12,6 +12,5 @@ public class Constants {
     public static final String DEPOSIT = "Deposit Transaction";
     public static final String TRANSFER = "Transfer Transaction";
     public static final String ACCOUNT_NOT_FOUND = "Account not found, please check your inputs and try again";
-    public static final String SERVER_URI = "ws://localhost:9090/blockchainServer/";
 
 }
