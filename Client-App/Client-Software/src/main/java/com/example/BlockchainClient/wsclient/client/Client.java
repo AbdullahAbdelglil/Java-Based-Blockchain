@@ -37,11 +37,11 @@ public class Client {
     public Client(String username) {
         this.userName = username;
         try {
-            String serverURI = environment.getProperty("SERVER_URI");
-            String connectionURI = serverURI + userName;
+            String websocketURL = environment.getProperty("WEBSOCKET_URL");
+            String URL = websocketURL + userName;
 
             WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-            container.connectToServer(this, new URI(connectionURI));
+            container.connectToServer(this, new URI(URL));
         } catch (DeploymentException | IOException | RuntimeException e) {
             e.printStackTrace();
         } catch (URISyntaxException e) {
@@ -372,6 +372,7 @@ public class Client {
     }
 
     public Account getAccount() {
+        account = ledger.get(account.getAccountNumber());
         return account;
     }
 
