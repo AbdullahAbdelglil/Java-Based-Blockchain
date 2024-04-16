@@ -40,9 +40,9 @@ The Blockchain-Client project serves as the interface for users to interact with
 ### Prerequisites:
   (*) Means its must..
   
-- * Java Development Kit (JDK) 17 or higher 
-- * MongoDB installed and running locally or accessible remotely
-- * Hazelcast 5.3.6
+-  Java Development Kit (JDK) 17 or higher *
+-  MongoDB installed and running locally or accessible remotely *
+-  Hazelcast 5.3.6 *
 - Hazelcast Management Center 5.3.3 (Optional) for tracking your memory usage
   
 ### Installation:
