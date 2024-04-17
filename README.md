@@ -8,6 +8,13 @@ This project is a full Java-based blockchain implementation that demonstrates va
 [![Hazelcast](https://img.shields.io/badge/Hazelcast-5.3.6-blue)](https://hazelcast.com/)
 
 
+## Demo
+
+<p align="center">
+  <iframe width="560" height="315" src="https://github.com/AbdullahAbdelglil/Java-Based-Blockchain/assets/118194521/9667d164-a0b6-47c9-a6e0-6375209f7a71" frameborder="0" allowfullscreen></iframe>
+</p>
+
+
 ## 1. Server-App
 
 The Blockchain-Server project is responsible for managing communication with clients, maintaining the blockchain, and handling consensus mechanisms.
@@ -22,6 +29,12 @@ The Blockchain-Server project is responsible for managing communication with cli
 ## 2. Client-App
 
 The Blockchain-Client project serves as the interface for users to interact with the blockchain network.
+  
+### Features:
+- Allows users to create accounts, which are recorded as transactions on the blockchain.
+- Supports bank transactions such as deposit, withdrawal, and transfer.
+- Provides functionality to retrieve the full blockchain and ledger from the server.
+- Enables users to print their account information.
 
 ## Communication
 
@@ -30,12 +43,6 @@ The Blockchain-Client project serves as the interface for users to interact with
 - This identifier is then transmitted via the WebSocket URL to establish a connection with the server.
 - In the event of a connection interruption and subsequent reconnection, the server seamlessly identifies the client using this unique identifier, enabling the resumption of     
   services by transmitting the client's account data.
-  
-### Features:
-- Allows users to create accounts, which are recorded as transactions on the blockchain.
-- Supports bank transactions such as deposit, withdrawal, and transfer.
-- Provides functionality to retrieve the full blockchain and ledger from the server.
-- Enables users to print their account information.
 
 ## Technologies Used:
 - Java 17
