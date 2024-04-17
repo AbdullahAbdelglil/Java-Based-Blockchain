@@ -10,9 +10,7 @@ This project is a full Java-based blockchain implementation that demonstrates va
 
 ## Demo
 
-<p align="center">
-  <iframe width="560" height="315" src="https://github.com/AbdullahAbdelglil/Java-Based-Blockchain/assets/118194521/9667d164-a0b6-47c9-a6e0-6375209f7a71" frameborder="0" allowfullscreen></iframe>
-</p>
+https://github.com/AbdullahAbdelglil/Java-Based-Blockchain/assets/118194521/9667d164-a0b6-47c9-a6e0-6375209f7a7 
 
 
 ## 1. Server-App
