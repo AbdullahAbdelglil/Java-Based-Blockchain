@@ -23,6 +23,14 @@ The Blockchain-Server project is responsible for managing communication with cli
 
 The Blockchain-Client project serves as the interface for users to interact with the blockchain network.
 
+## Communication
+
+- Utilizing WebSocket technology for communication across the network.
+- the client application initializes by retrieving the device username and MAC address, amalgamating them into a singular, unique identifier.
+- This identifier is then transmitted via the WebSocket URL to establish a connection with the server.
+- In the event of a connection interruption and subsequent reconnection, the server seamlessly identifies the client using this unique identifier, enabling the resumption of     
+  services by transmitting the client's account data.
+  
 ### Features:
 - Allows users to create accounts, which are recorded as transactions on the blockchain.
 - Supports bank transactions such as deposit, withdrawal, and transfer.
