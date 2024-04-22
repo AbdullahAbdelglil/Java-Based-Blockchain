@@ -81,8 +81,5 @@ The Blockchain-Client project serves as the interface for users to interact with
 
 5. Access the client application via a web browser or REST client.
 
-## License:
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contributing
 We welcome contributions to enhance the functionality and features of this project. If you're interested in contributing, please fork the repository, make your changes, and submit a pull request. Together, we can make this project even better! 
